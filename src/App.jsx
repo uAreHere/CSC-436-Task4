@@ -8,7 +8,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
   const [maxLength, setMaxLength] = useState("");
-  const [sortOrder, setSortOrder] = useState("ascending");
+  const [sortOrder, setSortOrder] = useState("descending");
 
   useEffect(() => {
     const sortedMovies = [...movieData].sort((a, b) => {
